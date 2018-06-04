@@ -1,0 +1,1 @@
+fetch('goods.json').
