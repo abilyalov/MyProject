@@ -1,0 +1,252 @@
+{% extends "MainApp/wrapper.html" %}
+{% load staticfiles %}
+{% block content %}
+
+<!-- content -->
+<div class="container">
+<div class="women_main">
+	<!-- start content -->
+			<div class="row single">
+				<div class="col-md-9 det">
+				  <div class="single_left">
+					<div class="grid images_3_of_2">
+						<ul id="etalage">
+							<li>
+								<a href="optionallink.html">
+									<img class="etalage_thumb_image" src="images/d1.jpg" class="img-responsive" />
+									<img class="etalage_source_image" src="images/d1.jpg" class="img-responsive" title="" />
+								</a>
+							</li>
+							<li>
+								<img class="etalage_thumb_image" src="images/d2.png" class="img-responsive" />
+								<img class="etalage_source_image" src="images/d2.png" class="img-responsive" title="" />
+							</li>
+							<li>
+								<img class="etalage_thumb_image" src="images/d3.jpg" class="img-responsive"  />
+								<img class="etalage_source_image" src="images/d3.jpg"class="img-responsive"  />
+							</li>
+						    <li>
+								<img class="etalage_thumb_image" src="images/d4.png" class="img-responsive"  />
+								<img class="etalage_source_image" src="images/d4.png"class="img-responsive"  />
+							</li>
+						</ul>
+						 <div class="clearfix"></div>
+				  </div>
+				  <div class="desc1 span_3_of_2">
+					<h3>{{ details.title }}</h3>
+					<span class="brand">Brand: <a href="#">{{ details.Brand }} </a></span>
+					<br>
+					<span class="code"></span>
+					<p>{{ details.Short_discription }}</p><br>
+						<div class="price">
+							<span class="text">Price:</span>
+							<span class="price-new">${{ details.Price }}</span>
+						</div>
+					<div class="btn_form">
+						<a href="checkout.html">buy</a>
+					</div>
+					<a href="#"><span>login to save in wishlist </span></a>
+
+			   	 </div>
+          	    <div class="clearfix"></div>
+          	   </div>
+          	    <div class="single-bottom1">
+					<h6>Details</h6>
+					<p class="prod-desc">{{ details.Full_discription }}</p>
+
+				</div>
+				<div class="single-bottom2">
+						<h6>Comments</h6>
+						{% for com in Comments %}
+						<p class="prod-desc">{{ com.Text }}</p>
+						{% endfor %}
+						{% if username %}
+						<form action="/product/addcomm/{{ details.id }}/" method="post">{% csrf_token %}
+							{{ form.as_p }}
+							<input type="submit" class="button1" value="Add comment"/>
+						</form>
+						{% endif %}
+
+				</div>
+				<div class="single-bottom2">
+					<h6>Related Products</h6>
+						<div class="product">
+						   <div class="product-desc">
+								<div class="product-img">
+		                           <img src="{% static 'images/pp1.jpg' %}" class="img-responsive " alt=""/>
+		                       </div>
+		                       <div class="prod1-desc">
+		                           <h5><a class="product_link" href="#">Excepteur sint</a></h5>
+		                           <p class="product_descr">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s </p>
+							   </div>
+							  <div class="clearfix"></div>
+					      </div>
+						  <div class="product_price">
+								<span class="price-access">$51.51</span>
+								<button class="button1"><span>Add to cart</span></button>
+		                  </div>
+						 <div class="clearfix"></div>
+				     </div>
+				     <div class="product">
+						   <div class="product-desc">
+								<div class="product-img">
+		                           <img src="{% static 'images/pp2.jpg' %}" class="img-responsive " alt=""/>
+		                       </div>
+		                       <div class="prod1-desc">
+		                           <h5><a class="product_link" href="#">Excepteur sint</a></h5>
+		                           <p class="product_descr">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+							   </div>
+							   <div class="clearfix"></div>
+					      </div>
+						  <div class="product_price">
+								<span class="price-access">$17.51</span>
+								<button class="button1"><span>Add to cart</span></button>
+		                  </div>
+						 <div class="clearfix"></div>
+				     </div>
+		   	  </div>
+	       </div>
+	<div class="col-md-3">
+	  <div class="w_sidebar">
+		<div class="w_nav1">
+			<h4>All</h4>
+			<ul>
+				<li><a href="#">Toys</a></li>
+				<li><a href="#">Board game</a></li>
+				<li><a href="#">Lego</a></li>
+				<li><a href="#">sale</a></li>
+			</ul>
+		</div>
+		<h3>filter by</h3>
+		<section  class="sky-form">
+					<h4>catogories</h4>
+						<div class="row1 scroll-pane">
+							<div class="col col-4">
+								<label class="checkbox"><input type="checkbox" name="checkbox" checked=""><i></i>lorem</label>
+							</div>
+							<div class="col col-4">
+								<label class="checkbox"><input type="checkbox" name="checkbox"><i></i>lorem</label>
+								<label class="checkbox"><input type="checkbox" name="checkbox"><i></i>lorem</label>
+								<label class="checkbox"><input type="checkbox" name="checkbox"><i></i>lorem</label>
+								<label class="checkbox"><input type="checkbox" name="checkbox"><i></i>lorem</label>
+								<label class="checkbox"><input type="checkbox" name="checkbox" ><i></i>lorem</label>
+								<label class="checkbox"><input type="checkbox" name="checkbox"><i></i>lorem</label>
+								<label class="checkbox"><input type="checkbox" name="checkbox"><i></i>lorem</label>
+								<label class="checkbox"><input type="checkbox" name="checkbox"><i></i>lorem</label>
+								<label class="checkbox"><input type="checkbox" name="checkbox"><i></i>lorem</label>
+							</div>
+						</div>
+		</section>
+		<section  class="sky-form">
+					<h4>brand</h4>
+						<div class="row1 scroll-pane">
+							<div class="col col-4">
+								<label class="checkbox"><input type="checkbox" name="checkbox" checked=""><i></i>lorem</label>
+								<label class="checkbox"><input type="checkbox" name="checkbox"><i></i>lorem</label>
+								<label class="checkbox"><input type="checkbox" name="checkbox"><i></i>lorem</label>
+							</div>
+							<div class="col col-4">
+								<label class="checkbox"><input type="checkbox" name="checkbox"><i></i>vlorem</label>
+								<label class="checkbox"><input type="checkbox" name="checkbox"><i></i>lorem</label>
+								<label class="checkbox"><input type="checkbox" name="checkbox"><i></i>lorem</label>
+								<label class="checkbox"><input type="checkbox" name="checkbox"><i></i>lorem</label>
+								<label class="checkbox"><input type="checkbox" name="checkbox"><i></i>lorem</label>
+								<label class="checkbox"><input type="checkbox" name="checkbox" ><i></i>lorem</label>
+								<label class="checkbox"><input type="checkbox" name="checkbox"><i></i>lorem</label>
+								<label class="checkbox"><input type="checkbox" name="checkbox"><i></i>lorem</label>
+								<label class="checkbox"><input type="checkbox" name="checkbox"><i></i>lorem</label>
+								<label class="checkbox"><input type="checkbox" name="checkbox"><i></i>lorem</label>
+								<label class="checkbox"><input type="checkbox" name="checkbox"><i></i>lorem</label>
+							</div>
+						</div>
+		</section>
+	</div>
+   </div>
+		   <div class="clearfix"></div>
+	  </div>
+	<!-- end content -->
+</div>
+</div>
+</div>
+<div class="foot-top">
+	<div class="container">
+		<div class="col-md-12 s-c text-center">
+			<li>
+				<div class="fooll">
+					<h5>follow us on</h5>
+				</div>
+			</li>
+			<li>
+				<div class="social-ic">
+					<ul>
+						<li><a href="#"><i class="facebok"> </i></a></li>
+						<li><a href="#"><i class="twiter"> </i></a></li>
+						<li><a href="#"><i class="goog"> </i></a></li>
+						<li><a href="#"><i class="be"> </i></a></li>
+							<div class="clearfix"></div>
+					</ul>
+				</div>
+			</li>
+				<div class="clearfix"> </div>
+		</div>
+			<div class="clearfix"> </div>
+	</div>
+</div>
+<div class="footer">
+	<div class="container">
+		<div class="col-md-3 cust">
+			<h4>CUSTOMER CARE</h4>
+				<li><a href="#">Help Center</a></li>
+				<li><a href="#">FAQ</a></li>
+				<li><a href="#">How To Buy</a></li>
+				<li><a href="#">Delivery</a></li>
+		</div>
+		<div class="col-md-3 abt">
+			<h4>ABOUT US</h4>
+				<li><a href="#">Our Stories</a></li>
+				<li><a href="#">Press</a></li>
+				<li><a href="contact.html">Delivery information</a></li>
+				<li><a href="contact.html">Contact</a></li>
+		</div>
+		<div class="col-md-3 myac">
+			<h4>MY ACCOUNT</h4>
+				<li><a href="#">Register</a></li>
+				<li><a href="#">My Cart</a></li>
+				<li><a href="#">Order History</a></li>
+				<li><a href="#">Payment</a></li>
+		</div>
+		<div class="col-md-3 our-st">
+			<div class="our-left">
+				<h4>OUR STORES</h4>
+			</div>
+			<div class="clearfix"> </div>
+				<li><i class="add"> </i>Almaty, st. Abylai-khan</li>
+				<li><i class="phone"> </i>8 778 7111167</li>
+				<li><a href="mailto:info@example.com"><i class="mail"> </i>Qzer.1998@gmail.com </a></li>
+
+		</div>
+		<div class="clearfix"> </div>
+			<p>Copyrights © 2017 BabyToys.</p>
+	</div>
+</div>
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<script>
+			jQuery(document).ready(function($){
+
+				$('#etalage').etalage({
+					thumb_image_width: 300,
+					thumb_image_height: 400,
+					source_image_width: 900,
+					source_image_height: 1200,
+					show_hint: true,
+					click_callback: function(image_anchor, instance_id){
+						alert('Callback example:\nYou clicked on an image with the anchor: "'+image_anchor+'"\n(in Etalage instance: "'+instance_id+'")');
+					}
+				});
+
+			});
+</script>
+</body>
+</html>
+
+{% endblock %}

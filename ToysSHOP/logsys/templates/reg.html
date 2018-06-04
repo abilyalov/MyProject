@@ -1,0 +1,76 @@
+{% extends "wrapper.html" %}
+{% load staticfiles %}
+{% block content %}
+
+		<!-- form for registration -->
+    <div class="container">
+      <form action="/auth/register/" method="post">
+        {{ form.as_p }}
+				<input type="submit" id="reg" value="Sing up" class="button1">
+      </form>
+    </div>
+<div class="foot-top">
+	<div class="container">
+		<div class="col-md-12 s-c text-center">
+			<li>
+				<div class="fooll">
+					<h5>follow us on</h5>
+				</div>
+			</li>
+			<li>
+				<div class="social-ic">
+					<ul>
+						<li><a href="#"><i class="facebok"> </i></a></li>
+						<li><a href="#"><i class="twiter"> </i></a></li>
+						<li><a href="#"><i class="goog"> </i></a></li>
+						<li><a href="#"><i class="be"> </i></a></li>
+							<div class="clearfix"></div>
+					</ul>
+				</div>
+			</li>
+				<div class="clearfix"> </div>
+		</div>
+			<div class="clearfix"> </div>
+	</div>
+</div>
+<div class="footer">
+	<div class="container">
+		<div class="col-md-3 cust">
+			<h4>CUSTOMER CARE</h4>
+				<li><a href="#">Help Center</a></li>
+				<li><a href="#">FAQ</a></li>
+				<li><a href="#">How To Buy</a></li>
+				<li><a href="#">Delivery</a></li>
+		</div>
+		<div class="col-md-3 abt">
+			<h4>ABOUT US</h4>
+				<li><a href="#">Our Stories</a></li>
+				<li><a href="#">Press</a></li>
+				<li><a href="contact.html">Delivery information</a></li>
+				<li><a href="contact.html">Contact</a></li>
+		</div>
+		<div class="col-md-3 myac">
+			<h4>MY ACCOUNT</h4>
+				<li><a href="#">Register</a></li>
+				<li><a href="#">My Cart</a></li>
+				<li><a href="#">Order History</a></li>
+				<li><a href="#">Payment</a></li>
+		</div>
+		<div class="col-md-3 our-st">
+			<div class="our-left">
+				<h4>OUR STORES</h4>
+			</div>
+			<div class="clearfix"> </div>
+				<li><i class="add"> </i>Almaty, st. Abylai-khan</li>
+				<li><i class="phone"> </i>8 778 7111167</li>
+				<li><a href="mailto:info@example.com"><i class="mail"> </i>Qzer.1998@gmail.com </a></li>
+
+		</div>
+		<div class="clearfix"> </div>
+			<p>Copyrights © 2017 BabyToys.</p>
+	</div>
+</div>
+</body>
+</html>
+
+{% endblock %}

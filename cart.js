@@ -1,1 +1,0 @@
-fetch('goods.json').

@@ -1,0 +1,127 @@
+<div class="shop-grid">
+            <div class="container">
+                <div class="col-md-4 grid-stn simpleCart_shelfItem">
+                     <!-- normal -->
+                        <div class="ih-item square effect3 bottom_to_top">
+                            <div class="bottom-2-top">
+                    <div class="img"><img src="images/cake7.jpg" alt="/" class="img-responsive gri-wid"></div>
+                            <div class="info">
+                                <div class="pull-left styl-hdn">
+                                    <h3>Boozy Party Treat</h3>
+                                </div>
+                                <div class="pull-right styl-price">
+                                    <p><a  href="#" class="item_add"><span class="glyphicon glyphicon-shopping-cart grid-cart" aria-hidden="true"></span> <span class=" item_price">$99</span></a></p>
+                                </div>
+                                <div class="clearfix"></div>
+                            </div></div>
+                        </div>
+                    <!-- end normal -->
+                    <div class="quick-view">
+                        <a href="single.html">VIEW</a>
+                    </div>
+                </div>
+                <div class="col-md-4 grid-stn simpleCart_shelfItem">
+                    <!-- normal -->
+                        <div class="ih-item square effect3 bottom_to_top">
+                            <div class="bottom-2-top">
+                    <div class="img"><img src="images/cake8.jpg" alt="/" class="img-responsive gri-wid"></div>
+                            <div class="info">
+                                <div class="pull-left styl-hdn">
+                                    <h3>Drunken Pumpkin</h3>
+                                </div>
+                                <div class="pull-right styl-price">
+                                    <p><a  href="#" class="item_add"><span class="glyphicon glyphicon-shopping-cart grid-cart" aria-hidden="true"></span> <span class=" item_price">$99</span></a></p>
+                                </div>
+                                <div class="clearfix"></div>
+                            </div></div>
+                        </div>
+                    <!-- end normal -->
+                    <div class="quick-view">
+                        <a href="single.html">VIEW</a>
+                    </div>
+                </div>
+                <div class="col-md-4 grid-stn simpleCart_shelfItem">
+                    <!-- normal -->
+                        <div class="ih-item square effect3 bottom_to_top">
+                            <div class="bottom-2-top">
+                    <div class="img"><img src="images/cake9.jpg" alt="/" class="img-responsive gri-wid"></div>
+                            <div class="info">
+                                <div class="pull-left styl-hdn">
+                                    <h3>Naughty Nutel-Latte</h3>
+                                </div>
+                                <div class="pull-right styl-price">
+                                    <p><a  href="#" class="item_add"><span class="glyphicon glyphicon-shopping-cart grid-cart" aria-hidden="true"></span> <span class=" item_price">$99</span></a></p>
+                                </div>
+                                <div class="clearfix"></div>
+                            </div></div>
+                        </div>
+                    <!-- end normal -->
+                    <div class="quick-view">
+                        <a href="single.html">VIEW</a>
+                    </div>
+                </div>
+                <div class="col-md-4 grid-stn simpleCart_shelfItem">
+                    <!-- normal -->
+                        <div class="ih-item square effect3 bottom_to_top">
+                            <div class="bottom-2-top">
+                    <div class="img"><img src="images/cake10.jpg" alt="/" class="img-responsive gri-wid"></div>
+                            <div class="info">
+                                <div class="pull-left styl-hdn">
+                                    <h3>Raspberry Rose</h3>
+                                </div>
+                                <div class="pull-right styl-price">
+                                    <p><a  href="#" class="item_add"><span class="glyphicon glyphicon-shopping-cart grid-cart" aria-hidden="true"></span> <span class=" item_price">$99</span></a></p>
+                                </div>
+                                <div class="clearfix"></div>
+                            </div></div>
+                        </div>
+                    <!-- end normal -->
+                    <div class="quick-view">
+                        <a href="single.html">VIEW</a>
+                    </div>
+                </div>
+                <div class="col-md-4 grid-stn simpleCart_shelfItem">
+                    <!-- normal -->
+                        <div class="ih-item square effect3 bottom_to_top">
+                            <div class="bottom-2-top">
+                    <div class="img"><img src="images/cake11.jpg" alt="/" class="img-responsive gri-wid"></div>
+                            <div class="info">
+                                <div class="pull-left styl-hdn">
+                                    <h3>Spicy Grapefruit</h3>
+                                </div>
+                                <div class="pull-right styl-price">
+                                    <p><a  href="#" class="item_add"><span class="glyphicon glyphicon-shopping-cart grid-cart" aria-hidden="true"></span> <span class=" item_price">$99</span></a></p>
+                                </div>
+                                <div class="clearfix"></div>
+                            </div></div>
+                        </div>
+                    <!-- end normal -->
+                    <div class="quick-view">
+                        <a href="single.html">VIEW</a>
+                    </div>
+                </div>
+                <div class="col-md-4 grid-stn simpleCart_shelfItem">
+                    <!-- normal -->
+                        <div class="ih-item square effect3 bottom_to_top">
+                            <div class="bottom-2-top">
+                    <div class="img"><img src="images/cake12.jpg" alt="/" class="img-responsive gri-wid"></div>
+                            <div class="info">
+                                <div class="pull-left styl-hdn">
+                                    <h3>Jelly Jar Combo Pack</h3>
+                                </div>
+                                <div class="pull-right styl-price">
+    <p><a  href="#" class="item_add"><span class="glyphicon glyphicon-shopping-cart grid-cart" aria-hidden="true"></span> <span class=" item_price">$99</span></a></p>
+                                </div>
+                                <div class="clearfix"></div>
+                            </div></div>
+                        </div>
+                    <!-- end normal -->
+                    <div class="quick-view">
+                        <a href="single.html">VIEW</a>
+                    </div>
+                </div>
+                
+        <div class="clearfix"></div>
+            </div>
+            
+        </div>
